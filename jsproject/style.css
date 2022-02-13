@@ -1,0 +1,827 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: auto;
+}
+
+
+/* navbar */
+
+.navbar {
+    background-color: rgb(10, 45, 78);
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    color: red;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
+span {
+    color: rgb(212, 140, 32);
+}
+
+.nav-items {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    padding: 15px;
+    margin: 2px;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+li a:hover {
+    background-color: rgb(201, 200, 199);
+    color: black;
+}
+
+.openmanue {
+    display: none;
+    position: absolute;
+    right: 15px;
+    font-size: 30px;
+    color: white;
+    /* display: none; */
+    cursor: pointer;
+}
+
+.closmanue {
+    display: none;
+}
+
+@media screen and (max-width:830px) {
+    .openmanue {
+        display: block;
+    }
+    .closmanue {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 30px;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+    .nav-items {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(15, 15, 15);
+        position: fixed;
+        right: -100%;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 2s;
+        z-index: 1;
+    }
+    li {
+        padding: 30px;
+    }
+    li a {
+        font-size: 30px;
+    }
+}
+
+
+/* this is home */
+
+.section1 {
+    background-image: url(bg.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: 100% 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.home {
+    margin-left: 100px;
+}
+
+.home h3 {
+    font-size: 40px;
+    letter-spacing: 5px;
+    padding: 3px;
+    color: white;
+}
+
+.home h1 {
+    font-size: 60px;
+    letter-spacing: 5px;
+    padding: 3px;
+    color: white;
+}
+
+.home h2 {
+    font-size: 50px;
+    letter-spacing: 5px;
+    padding: 3px;
+    color: white;
+}
+
+.home button {
+    height: 50px;
+    width: 120px;
+    background-color: rgb(201, 200, 199);
+    outline: none;
+    border: none;
+    color: rgb(3, 3, 3);
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+/* this is about */
+
+.section2 {
+    height: auto;
+}
+
+.about {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: black;
+    position: relative;
+}
+
+.about h1::before {
+    content: "";
+    width: 190px;
+    height: 3px;
+    background-color: rgb(58, 58, 218);
+    position: absolute;
+    /* top: 50px; */
+    bottom: -10px;
+}
+
+.about h1::after {
+    content: "Who i am";
+    position: absolute;
+    font-size: 15px;
+    display: block;
+    left: 43px;
+    background-color: white;
+    padding: 0 10px;
+}
+
+.section3 {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    background-color: white;
+    flex-wrap: wrap;
+    padding: 40px 0px;
+}
+
+.img1 img {
+    width: 350px;
+    height: 350px;
+    background-size: 100%;
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px 5px black;
+}
+
+.content {
+    width: 500px;
+    height: auto;
+    margin: 0px 20px;
+}
+
+.content h1 {
+    font-size: 25px;
+    margin: 5px;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+}
+
+.content p {
+    line-height: 1.5;
+}
+
+.content button {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(66, 66, 209);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    margin: 10px;
+}
+
+
+/* this is services */
+
+.services {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 0px 0px;
+}
+
+.service {
+    background-color: black;
+}
+
+.services h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: white;
+    position: relative;
+}
+
+.services h1::before {
+    content: "";
+    width: 240px;
+    height: 3px;
+    background-color: rgb(58, 58, 218);
+    position: absolute;
+    /* top: 50px; */
+    bottom: -10px;
+}
+
+.services h1::after {
+    content: "What i provide";
+    position: absolute;
+    font-size: 15px;
+    display: block;
+    left: 45px;
+    background-color: black;
+    padding: 0 10px;
+}
+
+.section5 {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 0px 80px 0px;
+}
+
+.box1 {
+    width: 305px;
+    height: 230px;
+    background-color: rgb(27, 26, 26);
+    text-align: justify;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px 1px white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.box1 h2 {
+    color: white;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.box1 p {
+    color: white;
+}
+
+.box1:hover {
+    background-color: rgb(98, 98, 228);
+    transition: 1s;
+}
+
+
+/* this is skill */
+
+.section6 {
+    height: auto;
+    background: white;
+    padding: 60px 0px;
+}
+
+.skill {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.skill h1::before {
+    content: "";
+    width: 190px;
+    height: 3px;
+    background-color: rgb(58, 58, 218);
+    position: absolute;
+    /* top: 50px; */
+    bottom: -10px;
+}
+
+.skill h1::after {
+    content: "what i know";
+    position: absolute;
+    font-size: 15px;
+    display: block;
+    left: 33px;
+    background-color: white;
+    padding: 0 10px;
+}
+
+.myexperience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.experience {
+    width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.3;
+    padding: 40px 0px;
+    margin: 10px;
+}
+
+.avg {
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.experience p {
+    text-align: justify;
+}
+
+.experience h2 {
+    font-size: 22px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.experience button {
+    width: 100px;
+    padding: 10px;
+    background-color: rgb(65, 65, 224);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.prsn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.range {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(142, 142, 145);
+}
+
+.prsnrange {
+    width: 80%;
+    height: 5px;
+    background-color: blue;
+}
+
+.prsn1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.range1 {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(142, 142, 145);
+}
+
+.prsnrange1 {
+    width: 75%;
+    height: 5px;
+    background-color: blue;
+}
+
+.prsn2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.range2 {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(142, 142, 145);
+}
+
+.prsnrange2 {
+    width: 55%;
+    height: 5px;
+    background-color: blue;
+}
+
+.prsn3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.range3 {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(142, 142, 145);
+}
+
+.prsnrange3 {
+    width: 60%;
+    height: 5px;
+    background-color: blue;
+}
+
+.prsn4 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.range4 {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(142, 142, 145);
+}
+
+.prsnrange4 {
+    width: 70%;
+    height: 5px;
+    background-color: blue;
+}
+
+
+/* this is contact */
+
+.section7 {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient( rgb(168, 167, 167), white);
+    padding: 40px 0px;
+}
+
+.contect {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contect h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: black;
+    position: relative;
+}
+
+.contect h1::before {
+    content: "";
+    width: 220px;
+    height: 3px;
+    background-color: rgb(58, 58, 218);
+    position: absolute;
+    /* top: 50px; */
+    bottom: -10px;
+}
+
+.contect h1::after {
+    content: "Get in touch";
+    position: absolute;
+    font-size: 15px;
+    display: block;
+    left: 40px;
+    background-color: rgb(184, 182, 182);
+    padding: 0 10px;
+}
+
+.last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: none;
+}
+
+.touch {
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+}
+
+.message {
+    width: 470px;
+    height: 400px;
+    margin: 10px;
+}
+
+.first {
+    margin-top: 20px;
+}
+
+.first h1 {
+    color: black;
+}
+
+.last1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.last1 h3 {
+    margin-top: 20px;
+}
+
+.inp1 input {
+    width: 450px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    outline: none;
+    margin-top: 10px;
+}
+
+.inp2 input {
+    width: 450px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    outline: none;
+    margin-top: 20px;
+    /* padding: 5px; */
+}
+
+.inp3 textarea {
+    width: 450px;
+    height: 100px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    outline: none;
+    margin-top: 20px;
+}
+
+.message button {
+    width: 130px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    background-color: rgb(52, 52, 216);
+    color: white;
+    cursor: pointer;
+}
+
+.message h2 {
+    margin-top: 20px;
+}
+
+
+/* this is footer */
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer,
+h1 {
+    color: white;
+}
+
+@media (max-width:620px) {
+    .logo {
+        font-size: 20px;
+    }
+    .home h3 {
+        font-size: 27px;
+    }
+    .home h1 {
+        font-size: 40px;
+    }
+    .home h2 {
+        font-size: 30px;
+    }
+    .home button {
+        width: 100px;
+        height: 40px;
+    }
+    .inp1 input {
+        width: 270px;
+        height: 20px;
+    }
+    .inp2 input {
+        width: 270px;
+        height: 20px;
+    }
+    .inp3 textarea {
+        width: 200px;
+        height: 50px;
+    }
+    footer h3 {
+        font-size: 13px;
+    }
+    footer p {
+        font-size: 11px;
+    }
+    .img1 img {
+        width: 250px;
+        height: 250px;
+    }
+    .content {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:490px) {
+    .inp1 input {
+        width: 370px;
+        height: 20px;
+        margin-top: 10px;
+    }
+    .inp2 input {
+        width: 370px;
+        height: 20px;
+        margin-top: 20px;
+    }
+    .inp3 textarea {
+        width: 300px;
+        height: 70px;
+    }
+}
+
+@media (max-width:400px) {
+    .inp1 input {
+        width: 300px;
+        height: 33px;
+    }
+    .inp2 input {
+        width: 300px;
+        height: 33px;
+    }
+    .img1 img {
+        width: 250px;
+        height: 250px;
+    }
+    .content {
+        margin-top: 10px;
+    }
+    .section1 {
+        height: 400px;
+    }
+}
+
+.form {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    position: absolute;
+    top: -100%;
+    margin-left: 400px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 2s;
+}
+
+@media (max-width:824px) {
+    .form {
+        margin-left: 150px;
+    }
+}
+
+@media (max-width:560px) {
+    .form {
+        margin-left: 50px;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width:360px) {
+    .form {
+        margin-left: 5px;
+    }
+}
+
+.form h1 {
+    color: rgb(52, 52, 216);
+}
+
+.form input {
+    width: 240px;
+    height: 20px;
+    outline: none;
+    border: 1px solid gray;
+    margin: 10px 10px;
+    border-radius: 3px;
+}
+
+.form textarea {
+    width: 240px;
+    height: 70px;
+    outline: none;
+    border: 1px solid gray;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+.btn1 {
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: rgb(90, 90, 224);
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 3px;
+}
+
+.btn2 {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(146, 140, 140);
+    border: none;
+    border-radius: 3px;
+}
